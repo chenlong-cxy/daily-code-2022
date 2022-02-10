@@ -3,6 +3,7 @@
 #include <vector>
 #include <algorithm>
 #include <map>
+
 using namespace std;
 typedef long long LL;
 
@@ -28,7 +29,6 @@ void init(map<LL, map<LL, LL>>& ex, map<LL, map<LL, LL>>& log)
 		}
 	}
 }
-
 LL extract(map<LL, map<LL, LL>>& ex, LL x, LL pow) //x开pow次方是多少
 {
 	if (pow == 1) //开1次方是本身
@@ -40,7 +40,6 @@ LL extract(map<LL, map<LL, LL>>& ex, LL x, LL pow) //x开pow次方是多少
 	else
 		return -1;
 }
-
 LL log(map<LL, map<LL, LL>>& log, LL x, LL y) //x是y的多少次方
 {
 	if (x == y)
