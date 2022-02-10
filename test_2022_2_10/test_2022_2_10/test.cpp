@@ -50,7 +50,6 @@ LL log(map<LL, map<LL, LL>>& log, LL x, LL y) //x是y的多少次方
 	else
 		return -1;
 }
-
 int main()
 {
 	map<LL, map<LL, LL>> all_ex;
