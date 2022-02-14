@@ -1,0 +1,29 @@
+# Project: test_2022_2_14
+# Makefile created by Dev-C++ 5.4.0
+
+CPP      = g++.exe -D__DEBUG__
+CC       = gcc.exe -D__DEBUG__
+WINDRES  = windres.exe
+OBJ      = test.o $(RES)
+LINKOBJ  = test.o $(RES)
+LIBS     = -L"C:/Users/Lee/Desktop/学生机环境-Dev-cpp5.4.0及API帮助文档/学生机环境-Dev-cpp5.4.0及API帮助文档/Dev-Cpp/MinGW32/lib" -static-libstdc++ -static-libgcc -g3
+INCS     = -I"C:/Users/Lee/Desktop/学生机环境-Dev-cpp5.4.0及API帮助文档/学生机环境-Dev-cpp5.4.0及API帮助文档/Dev-Cpp/MinGW32/include"
+CXXINCS  = -I"C:/Users/Lee/Desktop/学生机环境-Dev-cpp5.4.0及API帮助文档/学生机环境-Dev-cpp5.4.0及API帮助文档/Dev-Cpp/MinGW32/include"
+BIN      = test_2022_2_14.exe
+CXXFLAGS = $(CXXINCS)  -std=c++11 -g3
+CFLAGS   = $(INCS)  -std=c++11 -g3
+RM       = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+test.o: test.cpp
+	$(CPP) -c test.cpp -o test.o $(CXXFLAGS)
