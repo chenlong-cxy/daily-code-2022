@@ -455,14 +455,213 @@ void PlaneBoxPro4(int arr[8][8])
 		}
 	}
 }
-void MultiBox(int arr[8][8])
+void LetterC(int arr[8][8])
 {
 	int i, j;
 	for (i = 0; i < 8; i++)
 	{
 		for (j = 0; j < 8; j++)
 		{
-			if (i == 0 || i == 7 || j == 0 || j == 7)
+			if ((j == 1 || j == 6) && (i==2||i==3||i==4||i==5))
+				arr[i][j] = 1;
+			else if ((j == 2 || j == 3||j==4||j==5) && (i == 1))
+				arr[i][j] = 1;
+			else if ((j == 2 || j == 5) && (i == 6))
+				arr[i][j] = 1;
+			else
+				arr[i][j] = 0;
+		}
+	}
+}
+void LetterW(int arr[8][8])
+{
+	int i, j;
+	for (i = 0; i < 8; i++)
+	{
+		for (j = 0; j < 8; j++)
+		{
+			if ((i == 0 || i == 7) && (j == 2 || j == 3 || j == 4 || j == 5 || j == 6))
+				arr[i][j] = 1;
+			else if ((i == 1 || i == 6) && (j == 1))
+				arr[i][j] = 1;
+			else if ((i == 2 || i == 5) && (j == 2 || j == 3))
+				arr[i][j] = 1;
+			else if ((i == 3 || i == 4) && (j == 4 || j == 5))
+				arr[i][j] = 1;
+			else
+				arr[i][j] = 0;
+		}
+	}
+}
+void LetterN(int arr[8][8])
+{
+	int i, j;
+	for (i = 0; i < 8; i++)
+	{
+		for (j = 0; j < 8; j++)
+		{
+			if ((i == 1 || i == 6) && (j == 1 || j == 2 || j == 3 || j == 4 || j == 5 || j == 6))
+				arr[i][j] = 1;
+			else if ((i == 2) && (j == 5))
+				arr[i][j] = 1;
+			else if ((i == 3) && (j == 4))
+				arr[i][j] = 1;
+			else if ((i == 4) && (j == 3))
+				arr[i][j] = 1;
+			else if ((i == 5) && (j == 2))
+				arr[i][j] = 1;
+			else
+				arr[i][j] = 0;
+		}
+	}
+}
+void LetterU(int arr[8][8])
+{
+	int i, j;
+	for (i = 0; i < 8; i++)
+	{
+		for (j = 0; j < 8; j++)
+		{
+			if ((i == 1 || i == 6) && (j == 2 || j == 3 || j == 4 || j == 5 || j == 6))
+				arr[i][j] = 1;
+			else if ((i == 2 || i == 3 || i == 4 || i == 5) && (j == 1))
+				arr[i][j] = 1;
+			else
+				arr[i][j] = 0;
+		}
+	}
+}
+void LetterGO(int arr[8][8])
+{
+	int i, j;
+	for (i = 0; i < 8; i++)
+	{
+		for (j = 0; j < 8; j++)
+		{
+			if ((i == 0 || i == 5 || i == 7) && (j == 2 || j == 3 || j == 4))
+				arr[i][j] = 1;
+			else if ((i == 1 || i == 2 || i == 3 || i == 5 || i == 6 || i == 7) && (j == 1 || j == 5))
+				arr[i][j] = 1;
+			else if ((i == 3) && (j == 2 || j == 3))
+				arr[i][j] = 1;
+			else if ((i == 2) && (j == 3))
+				arr[i][j] = 1;
+			else
+				arr[i][j] = 0;
+		}
+	}
+}
+void LetterSin(int arr[8][8])
+{
+	int i, j;
+	for (i = 0; i < 8; i++)
+	{
+		for (j = 0; j < 8; j++)
+		{
+			if ((i == 0 || i == 1 || i == 2) && (j == i + 3))
+				arr[i][j] = 1;
+			else if ((i == 2 || i == 3 || i == 4 || i == 5 || i == 6) && (i + j == 7))
+				arr[i][j] = 1;
+			else if ((i == 7) && (j == 2))
+				arr[i][j] = 1;
+			else
+				arr[i][j] = 0;
+		}
+	}
+}
+void PlaneMoveLeft(int arr[8][8])
+{
+	int tmp[8], i, j;
+	for (i = 0; i < 8; i++)
+	{
+		tmp[i] = arr[0][i];
+	}
+	for (i = 0; i < 7; i++)
+	{
+		for (j = 0; j < 8; j++)
+		{
+			arr[i][j] = arr[i + 1][j];
+		}
+	}
+	for (i = 0; i < 8; i++)
+	{
+		arr[7][i] = tmp[i];
+	}
+}
+void LetterLogic(int arr[8][8])
+{
+	int i, j;
+	for (i = 0; i < 8; i++)
+	{
+		for (j = 0; j < 8; j++)
+		{
+			if ((i == 0 || i == 4) && (j == 1 || j == 2 || j == 3 || j == 4 || j == 5))
+				arr[i][j] = 1;
+			else if ((i == 1 || i == 2 || i == 3) && (j == 5))
+				arr[i][j] = 1;
+			else if ((i == 5 || i == 6 || i == 7) && (j == 1))
+				arr[i][j] = 1;
+			else
+				arr[i][j] = 0;
+		}
+	}
+}
+void Book1(int arr[8][8])
+{
+	int i, j;
+	for (i = 0; i < 8; i++)
+	{
+		for (j = 0; j < 8; j++)
+		{
+			if (j == 3)
+				arr[i][j] = 1;
+			else
+				arr[i][j] = 0;
+		}
+	}
+}
+void Book2(int arr[8][8])
+{
+	int i, j;
+	for (i = 0; i < 8; i++)
+	{
+		for (j = 0; j < 8; j++)
+		{
+			if (j == 3)
+				arr[i][j] = 1;
+			else if ((i == 4 || i == 5 || i == 6) && (j == i))
+				arr[i][j] = 1;
+			else
+				arr[i][j] = 0;
+		}
+	}
+}
+void Book3(int arr[8][8])
+{
+	int i, j;
+	for (i = 0; i < 8; i++)
+	{
+		for (j = 0; j < 8; j++)
+		{
+			if (j == 3)
+				arr[i][j] = 1;
+			else if ((i == 3) && (j == 4 || j == 5 || j == 6 || j == 7))
+				arr[i][j] = 1;
+			else
+				arr[i][j] = 0;
+		}
+	}
+}
+void Book4(int arr[8][8])
+{
+	int i, j;
+	for (i = 0; i < 8; i++)
+	{
+		for (j = 0; j < 8; j++)
+		{
+			if (j == 3)
+				arr[i][j] = 1;
+			else if ((i == 0 || i == 1 || i == 2) && (i + j == 6))
 				arr[i][j] = 1;
 			else
 				arr[i][j] = 0;
