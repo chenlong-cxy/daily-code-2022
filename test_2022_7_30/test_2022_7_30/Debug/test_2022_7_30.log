@@ -1,0 +1,12 @@
+﻿生成启动时间为 2022/7/30 19:27:12。
+     1>项目“D:\code\test_2022_7_30\test_2022_7_30\test_2022_7_30.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt test.cpp
+         test.cpp
+     1>d:\code\test_2022_7_30\test_2022_7_30\test.cpp(623): error C2440: “=”: 无法从“char *”转换为“char [10]”
+                 没有转换为数组类型，但有转换为数组的引用或指针
+     1>已完成生成项目“D:\code\test_2022_7_30\test_2022_7_30\test_2022_7_30.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.16
