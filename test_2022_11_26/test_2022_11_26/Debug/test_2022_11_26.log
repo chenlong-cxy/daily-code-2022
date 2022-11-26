@@ -1,0 +1,13 @@
+﻿生成启动时间为 2022/11/26 15:41:28。
+     1>项目“D:\code\test_2022_11_26\test_2022_11_26\test_2022_11_26.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt test.cpp
+         test.cpp
+     1>d:\code\test_2022_11_26\test_2022_11_26\test.cpp(135): error C2065: “cin”: 未声明的标识符
+     1>d:\code\test_2022_11_26\test_2022_11_26\test.cpp(139): error C2065: “cin”: 未声明的标识符
+     1>d:\code\test_2022_11_26\test_2022_11_26\test.cpp(144): error C2065: “cout”: 未声明的标识符
+     1>已完成生成项目“D:\code\test_2022_11_26\test_2022_11_26\test_2022_11_26.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.22
